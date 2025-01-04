@@ -3,4 +3,4 @@ LABEL author=Diya
 RUN apt-get update -y && \
     apt-get install nginx -y
 EXPOSE 80
-CMD ["/usr/sbin/nginx"]
+CMD ["nginx", "-g", "daemon off"]
